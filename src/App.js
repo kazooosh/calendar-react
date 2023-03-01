@@ -4,8 +4,8 @@ function App() {
   return (
     <div className="container max-w-fit mx-auto px-4 py-12 text-black/70">
       {/* header */}
-      <div className="flex justify-between mb-6">
-        <h1 className="text-2xl font-bold">Abwesenheiten</h1>
+      <div className="flex justify-between mb-12">
+        <h1 className="text-2xl font-bold ml-1">Abwesenheiten</h1>
         <div className="flex">
           <button className="btn hover:bg-gray-300">Export</button>
           <div className="btn-group">
@@ -15,7 +15,7 @@ function App() {
         </div>
       </div>
       <div className="flex mb-6">
-        <div className="filter">
+        <div className="filter ml-1 mr-6">
           <p className="font-bold mb-3 ml-1">Anzeigen</p>
           <button className="btn active">
             Abwesenheiten - <span>7</span>
@@ -30,7 +30,7 @@ function App() {
           <button className="btn btn-active">Alle Status</button>
         </div>
         <div className="features ml-auto self-end">
-          <button className="btn" disabled>
+          <button className="btn cursor-not-allowed" disabled>
             Ausstehende Anfragen
           </button>
           <button className="btn hover:bg-gray-300">...</button>
@@ -38,7 +38,7 @@ function App() {
       </div>
 
       {/* calendar */}
-      <div className="grid grid-cols-5 auto-rows-max border-b border-gray-300">
+      <div className="grid grid-cols-5 auto-rows-max border border-gray-300">
         <div className="row-span-2">
           <div className="h-full flex flex-col justify-between">
             <div className="flex justify-between border-b border-gray-300 py-4 pl-3 pr-5">
@@ -71,7 +71,7 @@ function App() {
             </form>
           </div>
         </div>
-        <div className="col-span-4 bg-red-100">
+        <div className="col-span-4 bg-gray-100 border-l border-gray-200">
           <div className="flex h-full pb-8 p-4 bg-gray-100">
             <button className="w-9 flex justify-start items-center">
               <svg
@@ -103,18 +103,18 @@ function App() {
                 <path d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6Z"></path>
               </svg>
             </button>
-            <span className="font-medium ml-10 leading-8">Februar 2023</span>
+            <span className="font-bold ml-10 leading-8">Februar 2023</span>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center bg-gray-100 p-1 text-center border-b border-gray-100 text-black/50">
+        <div className="flex flex-col justify-center items-center bg-gray-100 p-1 text-center border-b border-l border-gray-200 text-black/30">
           <p className="font-bold">1</p>
           <p className="text-sm">So.</p>
         </div>
-        <div className="flex flex-col justify-center items-center bg-gray-100 p-1 text-center border-b border-gray-100">
+        <div className="flex flex-col justify-center items-center bg-gray-100 p-1 text-center border-b border-gray-200">
           <p className="font-bold">2</p>
           <p className="text-sm">Mo.</p>
         </div>
-        <div className="flex flex-col justify-center items-center bg-gray-100 p-1 text-center border-b border-gray-100">
+        <div className="flex flex-col justify-center items-center bg-gray-100 p-1 text-center border-b border-gray-200">
           <p className="font-bold">3</p>
           <p className="text-sm">Di.</p>
         </div>
