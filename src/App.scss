@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind utilities;
+
+.btn {
+  @apply rounded py-1.5 px-3 text-gray-800 bg-gray-100 mx-1 transition-all;
+}
+
+.btn-group {
+  .btn {
+    @apply rounded-none mx-0;
+
+    &:first-of-type {
+      @apply rounded-l rounded-r-none;
+    }
+
+    &:last-of-type {
+      @apply rounded-r rounded-l-none;
+    }
+  }
+}
+
+.filter {
+  .btn {
+    @apply bg-white border border-gray-200;
+
+    &.active,
+    &:hover {
+      @apply bg-gray-100 text-sky-400;
+      text-shadow: 0.5px 0px 0.1px, -0.5px 0px 0.1px;
+    }
+
+    &.disabled {
+    }
+  }
+}
+
+.features {
+  .btn {
+    @apply font-bold;
+
+    &:disabled {
+      @apply bg-sky-200 text-white border-sky-200;
+    }
+  }
+}
+
+.cell {
+  @apply border-t border-l border-gray-200 text-center;
+
+  &.weekend {
+    @apply bg-gray-100;
+  }
+
+  &.selected {
+    @apply bg-sky-100 text-white;
+  }
+}
